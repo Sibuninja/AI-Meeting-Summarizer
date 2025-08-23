@@ -1,0 +1,31 @@
+
+# Core
+streamlit>=1.35.0
+numpy
+pandas
+torch
+torchaudio
+librosa
+# STT
+openai-whisper
+faster-whisper
+# Diarization (optional)
+pyannote.audio>=3.1.1
+# NLP
+transformers>=4.41.0
+sentencepiece
+accelerate
+# Visualization
+plotly
+matplotlib
+# Audio/IO
+ffmpeg-python
+pydub
+# PDF/Report
+reportlab
+jinja2
+markdown2
+# Env
+python-dotenv
+# Utilities
+tqdm

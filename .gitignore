@@ -1,0 +1,78 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pdb
+*.egg
+*.eggs
+*.env
+*.venv
+venv/
+env/
+ENV/
+.venv/
+.env/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# Pip
+pip-log.txt
+pip-delete-this.txt
+
+# Test
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Pyre
+.pyre/
+
+# Pytest
+.pytest_cache/
+
+# Build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Others
+*.sqlite3
+*.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+~$*
+
+# AI Meeting Summarizer specific
+# (add custom ignores below as needed)
