@@ -1,35 +1,72 @@
-# AI Meeting Summarizer
+# 🎙️ AI Meeting Summarizer  
 
-This project provides an AI-powered tool to transcribe and summarize meeting audio files. It uses state-of-the-art models for speech-to-text and natural language processing to generate concise meeting summaries.
+> **AI-powered tool** to transcribe and summarize your meetings from audio or video files with precise, structured summaries.  
 
-## Features
-- Audio file upload
-- Automatic transcription
-- AI-generated meeting summaries
-- Simple web interface (Streamlit)
+![AI Meeting Summarizer Banner](screenshots/banner.png)
 
-## Usage
-1. Upload your meeting audio file using the web interface.
-2. The app will transcribe the audio and generate a summary.
-3. Download or view the summary as needed.
+---
 
-## Requirements
-- Python 3.8+
-- See `requirements.txt` for dependencies
+## ✨ Features  
+- ✅ Upload **Audio or Video** meeting files (`.mp3`, `.wav`, `.m4a`, `.mp4`)  
+- ✅ **Automatic Transcription** with Whisper  
+- ✅ **Summarization Models**: Pegasus, Flan-T5, Longformer, or Auto  
+- ✅ **Clean UI** built with Streamlit  
+- ✅ One-click **Summary Generation**  
+- ✅ Stores uploads in `uploads/` folder & can auto-clear history  
 
-## How to Run
+---
+
+## 🚀 Tech Stack  
+- [Streamlit](https://streamlit.io/) – interactive UI  
+- [OpenAI Whisper](https://github.com/openai/whisper) – transcription  
+- [Hugging Face Transformers](https://huggingface.co/transformers/) – summarization  
+- [MoviePy](https://zulko.github.io/moviepy/) – video/audio processing  
+- [PyDub](https://github.com/jiaaro/pydub) – audio handling  
+
+---
+
+## ⚙️ Installation  
+
 ```bash
+# Clone the repository
+git clone https://github.com/your-username/ai-meeting-summarizer.git
+cd ai-meeting-summarizer
+
+# Create virtual environment
+python -m venv venv
+venv\Scripts\activate    # On Windows
+source venv/bin/activate # On Mac/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+Make sure FFmpeg is installed and added to PATH (needed by moviepy and pydub).
+
+Download FFmpeg or install via Chocolatey on Windows.
+
+▶️ Usage
+bash
+Copy
+Edit
+# Run the Streamlit app
 streamlit run app.py
-```
+Upload your meeting audio/video file
 
-## Folder Structure
-- `app.py` - Main Streamlit app
-- `summarizer.py` - Summarization logic
-- `transcriber.py` - Transcription logic
-- `upload/` - Uploaded audio files
+Wait for transcription
 
-## License
-MIT
+Click Generate Summary
 
-## Author
-Sibuninja
+Get a concise summary of your meeting 🚀
+
+
+🛠️ Future Improvements
+Add speaker diarization (who spoke when)
+
+Support for real-time meeting transcription
+
+Export summary as PDF/Word
+
+Cloud storage for transcripts
+
+🤝 Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
