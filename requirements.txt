@@ -1,31 +1,24 @@
+# Core framework
+streamlit==1.48.1
 
-# Core
-streamlit>=1.35.0
-numpy
-pandas
-torch
-torchaudio
-librosa
-# STT
-openai-whisper
-faster-whisper
-# Diarization (optional)
-pyannote.audio>=3.1.1
-# NLP
-transformers>=4.41.0
-sentencepiece
-accelerate
-# Visualization
-plotly
-matplotlib
-# Audio/IO
-ffmpeg-python
-pydub
-# PDF/Report
-reportlab
-jinja2
-markdown2
-# Env
-python-dotenv
+# Speech-to-text (OpenAI Whisper)
+openai-whisper==20240930
+pydub==0.25.1
+soundfile==0.12.1
+
+# Summarization models
+transformers==4.45.2
+torch==2.5.1+cu121     # If you want GPU (CUDA 12.1). Use torch==2.5.1+cpu if no GPU
+sentencepiece==0.2.1
+safetensors==0.4.3
+
+# Video/audio handling
+moviepy==1.0.3
+imageio==2.37.0
+imageio-ffmpeg==0.4.9
+
 # Utilities
-tqdm
+numpy==1.26.4
+pandas==2.2.2
+tqdm==4.67.1
+requests==2.32.3
